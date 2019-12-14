@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- Title, put in jumbotron -->
+
+    <div class="jumbotron" id="title">
+
+        <h1>Crystals Collector!</h1>
+
+    </div>
+
+
+    <!-- Instructions -->
+
+    <div id="instructions">
+
+        <p>You will be given a random number at the start of the game.</p>
+
+        <p>There are four crystals below. By clicking on a crystral, you will add a specific amount of points to your
+            score.
+        </p>
+
+        <p>You win the game by matching your total score to the random number. You lose the game if your total score
+            goes above the random number.</p>
+
+        <p>The value of each crystal is hidden from you until you click on it.</p>
+
+        <p>Each time when the game starts, the game will change the value of each crystal.</p>
+
+    </div>
+
+
+    <!-- Put random generated number and score side by side -->
+
+    <div id = numbers-block>
+
+    <div id="random-number"></div>
+
+    <div id="users-score"></div>
+
+</div>
+
+    <!-- Crystal Images -->
+
+    <div class="crystals col-md-12">
+
+        <img id="blue" class="column btn-crystal col-md-3" src="assets/images/blue.jpg">
+
+        <img id="green" class="column btn-crystal col-md-3" src="assets/images/green.jpg">
+
+        <img id="orange" class="column btn-crystal col-md-3" src="assets/images/orange.jpg">
+
+        <img id="white" class="column btn-crystal col-md-3" src="assets/images/white.jpg">
+
+    </div>
+    <!-- Wins & Losses -->
+
+<div id="score-block">
+
+    <div id="wins"></div>
+
+    <div id="losses"></div>
+
+</div>
+
+    <!-- Link to javascript file -->
+
+    <script src="assets/javascript/game.js"></script>
+
+</body>
+
+</html>
