@@ -1,13 +1,18 @@
 img {
     height: 15%; 
-    width: 15%; 
-
+    width: 15%;;
+    margin-right: 50px; 
+    margin-left: 50px;
 }
 
 
 h1 {
-    text-align: center;
-    
+    text-align: center; 
+}
+
+#header-font {
+    font-family: 'Dancing Script', cursive;
+    font-size: 100px; 
 }
 
 #instructions {
@@ -15,9 +20,10 @@ h1 {
     width: 100%; 
     margin: auto; 
     background: rgb(175, 175, 231); 
-    font-style: italic;
     padding: 20px; 
     margin-top: -33px; 
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 25px; 
 }
 
 #numbers-block {
@@ -27,7 +33,9 @@ h1 {
     margin: auto; 
     background: rgb(174, 243, 174); 
     font-weight: 400px;
+    font-size:20px; 
     padding: 20px; 
+    font-family: 'PT Sans Narrow', sans-serif;
 }
 
 #score-block {
@@ -35,6 +43,8 @@ h1 {
     width: 100%; 
     margin: auto; 
     background: rgb(230, 206, 164); 
-    font-weight: 400px;
+    font-weight: bolder;
     padding: 20px; 
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size:20px; 
 }

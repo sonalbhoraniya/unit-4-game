@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|PT+Sans+Narrow|Shadows+Into+Light&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 
@@ -18,7 +19,7 @@
 
     <div class="jumbotron" id="title">
 
-        <h1>Crystals Collector!</h1>
+        <h1 id="header-font">Crystals Collector!</h1>
 
     </div>
 
@@ -29,7 +30,7 @@
 
         <p>You will be given a random number at the start of the game.</p>
 
-        <p>There are four crystals below. By clicking on a crystral, you will add a specific amount of points to your
+        <p>There are four crystals below. By clicking on a crystal, you will add a specific amount of points to your
             score.
         </p>
 
@@ -57,13 +58,13 @@
 
     <div class="crystals col-md-12">
 
-        <img id="blue" class="column btn-crystal col-md-3" src="assets/images/blue.jpg">
+        <img id="blue" class="column btn-crystal" src="assets/images/blue.jpg">
 
-        <img id="green" class="column btn-crystal col-md-3" src="assets/images/green.jpg">
+        <img id="green" class="column btn-crystal" src="assets/images/green.jpg">
 
-        <img id="orange" class="column btn-crystal col-md-3" src="assets/images/orange.jpg">
+        <img id="orange" class="column btn-crystal" src="assets/images/orange.jpg">
 
-        <img id="white" class="column btn-crystal col-md-3" src="assets/images/white.jpg">
+        <img id="white" class="column btn-crystal" src="assets/images/white.jpg">
 
     </div>
     <!-- Wins & Losses -->
@@ -73,6 +74,10 @@
     <div id="wins"></div>
 
     <div id="losses"></div>
+
+     <!-- Button to reset the game -->
+
+     <button type="button" class="btn btn-warning">Reset the Game!</button>
 
 </div>
 

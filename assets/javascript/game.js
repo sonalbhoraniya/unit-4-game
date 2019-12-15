@@ -12,14 +12,14 @@ $(document).ready(function () {
     var greenValue = 0;
     var whiteValue = 0;
 
-    // initialize game stats  
+    // resets the game 
 
-    function initializeGameStats() {
+    function gameReset() {
         score = 0;
         wins = 0;
         losses = 0;
-        numberGenerator(); 
-        
+        numberGenerator();
+
         $("#random-number").text("Match this number: " + randomNumber)
 
         $("#users-score").text("Your score: " + score)
@@ -30,7 +30,7 @@ $(document).ready(function () {
 
     }
 
-    function numberGenerator () {
+    function numberGenerator() {
         randomNumber = Math.floor(Math.random() * (125) + 1);
         randomBlueValue = Math.floor(Math.random() * (12) + 1);
         randomGreenValue = Math.floor(Math.random() * (12) + 1);
@@ -41,7 +41,7 @@ $(document).ready(function () {
     function letsPlay() {
 
         score = 0;
-        numberGenerator(); 
+        numberGenerator();
 
         // display the the game stats  
 
@@ -68,8 +68,8 @@ $(document).ready(function () {
     }
 
     $(".btn-crystal").on("click", function () {
-        console.log(this); 
-        console.log($(this)); 
+        console.log(this);
+        console.log($(this));
         var number = $(this).attr("value");
         score = score + parseFloat(number);
         console.log(number);
@@ -78,18 +78,18 @@ $(document).ready(function () {
         // conditional statement
 
         if (score === randomNumber) {
-            // text "You Win!"
+            alert("You Win!"); 
             wins++
             $("#wins").text("Wins: " + wins)
-            letsPlay(); 
+            letsPlay();
 
         }
 
         if (score > randomNumber) {
-            // text "You Lose :(" 
+            alert("You Lose :("); 
             losses++
             $("#losses").text("Losses: " + losses)
-            letsPlay(); 
+            letsPlay();
 
         }
 
@@ -100,5 +100,10 @@ $(document).ready(function () {
 
     letsPlay();
 
+// when button is clicked, runs the game reset function to clear the board
+
+    $(".btn-warning").on("click", function () {
+        gameReset();
+    })
 })
 
