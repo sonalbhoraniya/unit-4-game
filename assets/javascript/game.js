@@ -31,7 +31,7 @@ $(document).ready(function () {
     }
 
     function numberGenerator() {
-        randomNumber = Math.floor(Math.random() * (125) + 1);
+        randomNumber = Math.floor(Math.random() * (101) + 19);
         randomBlueValue = Math.floor(Math.random() * (12) + 1);
         randomGreenValue = Math.floor(Math.random() * (12) + 1);
         randomOrangeValue = Math.floor(Math.random() * (12) + 1);
